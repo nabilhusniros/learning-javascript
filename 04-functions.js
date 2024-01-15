@@ -14,10 +14,16 @@ function product(a, b) {
 }
 
 // Log the product of 5 and 5 to the console
-console.log(product(5, 5))
+console.log(product(5, 5));
 
 // Calculate the product of two large numbers and assign it to a variable
 const bigProduct = product(1234, 1234);
 
 // Log the value of the big product to the console
-console.log(bigProduct)
+console.log(bigProduct);
+
+setTimeout(function (){
+    console.log("Time is ticking");
+}, 1000);
+
+setTimeout(() => console.log("Time is ticking"), 1000);
